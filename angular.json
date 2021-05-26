@@ -1,7 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "analytics": false,
+    "packageManager": "pnpm"
+  },
   "newProjectRoot": "projects",
+  "defaultProject": "mde",
   "projects": {
     "mde": {
       "root": "",
@@ -17,7 +22,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "aot": true,
             "outputPath": "dist/mde",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,7 +34,13 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -49,9 +59,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
@@ -135,7 +143,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/material-extended/mde/tsconfig.lib.json",
             "project": "projects/material-extended/mde/ng-package.json"
@@ -168,9 +176,5 @@
         }
       }
     }
-  },
-  "defaultProject": "mde",
-  "cli": {
-    "analytics": false
   }
 }
