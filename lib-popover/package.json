@@ -1,0 +1,23 @@
+{
+  "name": "@ajustee/mde-popover",
+  "version": "4.0.0",
+  "description": "fork of @ajustee/mde-popover",
+  "license": "MIT",
+  "author": {
+    "name": "Joe Jordan Brown",
+    "email": "joe.jordan.brown@gmail.com"
+  },
+  "keywords": [
+    "angular popover",
+    "material design",
+    "material extended",
+    "material popover",
+    "popover"
+  ],
+  "peerDependencies": {
+    "@angular/animations": "^12.0.2",
+    "@angular/cdk": "^12.0.2",
+    "@angular/common": "^12.0.2",
+    "@angular/core": "^12.0.2"
+  }
+}

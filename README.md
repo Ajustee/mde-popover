@@ -45,9 +45,9 @@ If you'd like to contribute please create an issue or pull request.
 ### Installation
 Install npm package using:
 
-`yarn add @material-extended/mde`
+`yarn add @ajustee/mde-popover`
 or
-`npm install @material-extended/mde`
+`npm install @ajustee/mde-popover`
 
 Install required packages @angular/cdk
 
@@ -69,7 +69,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { MdePopoverModule } from '@material-extended/mde';
+import { MdePopoverModule } from '@ajustee/mde-popover';
 
 @NgModule({
   declarations: [
@@ -102,7 +102,7 @@ Once a document is created the component can be refactored and released as beta 
 
 Please report bugs and issues [here](https://github.com/material-extended/mde/issues).
 
-### 
+###
 
 ### License
 MIT © [Joe Jordan Brown](https://github.com/joejordanbrown)

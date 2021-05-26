@@ -5,12 +5,12 @@
     "analytics": false,
     "packageManager": "pnpm"
   },
-  "newProjectRoot": "projects",
-  "defaultProject": "mde",
+  "newProjectRoot": "",
+  "defaultProject": "app-demo",
   "projects": {
-    "mde": {
-      "root": "",
-      "sourceRoot": "src",
+    "app-demo": {
+      "root": "app-demo",
+      "sourceRoot": "app-demo/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -22,18 +22,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mde",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "outputPath": "../dist/app-demo",
+            "index": "app-demo/src/index.html",
+            "main": "app-demo/src/main.ts",
+            "polyfills": "app-demo/src/polyfills.ts",
+            "tsConfig": "app-demo/tsconfig.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "app-demo/src/favicon.ico",
+              "app-demo/src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "app-demo/src/styles.scss"
             ],
             "scripts": [],
             "vendorChunk": true,
@@ -53,8 +53,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "app-demo/src/environments/environment.ts",
+                  "with": "app-demo/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -70,109 +70,32 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mde:build"
+            "browserTarget": "app-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mde:build:production"
+              "browserTarget": "app-demo:build:production"
             }
           }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "mde:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
-    "mde-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mde:serve"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "@material-extended/mde": {
-      "root": "projects/material-extended/mde",
-      "sourceRoot": "projects/material-extended/mde/src",
+    "lib-popover": {
+      "root": "lib-popover",
+      "sourceRoot": "lib-popover/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/material-extended/mde/tsconfig.lib.json",
-            "project": "projects/material-extended/mde/ng-package.json"
+            "tsConfig": "lib-popover/tsconfig.lib.json",
+            "project": "lib-popover/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/material-extended/mde/tsconfig.lib.prod.json"
+              "tsConfig": "lib-popover/tsconfig.lib.prod.json"
             }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/material-extended/mde/src/test.ts",
-            "tsConfig": "projects/material-extended/mde/tsconfig.spec.json",
-            "karmaConfig": "projects/material-extended/mde/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/material-extended/mde/tsconfig.lib.json",
-              "projects/material-extended/mde/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
