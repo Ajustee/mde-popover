@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageExamplesComponent } from './examples.component';
 import { PageExamplesFormComponent } from './form/form.component';
 import { PageErrorComponent } from '../error/error.component';
+import { PageExamplesBuilderComponent } from './builder/builder.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'form',
         component: PageExamplesFormComponent,
+      },
+      {
+        path: 'builder',
+        component: PageExamplesBuilderComponent,
       },
       {
         path: '**',

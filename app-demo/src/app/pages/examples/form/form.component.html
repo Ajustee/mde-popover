@@ -19,10 +19,11 @@
   </table>
 
   <mde-popover #inputPopover="mdePopover"
-               mdeFocusTrapEnabled="false"
+               [mdeFocusTrapEnabled]="false"
                mdePopoverPositionY="below"
                mdePopoverPositionX="before"
-               mdePopoverOffsetY="0" mdePopoverOffsetX="250">
+               [mdePopoverOffsetY]="0"
+               [mdePopoverOffsetX]="250">
     <div class="input-popover mat-elevation-z1">
       {{popoverText}}
     </div>

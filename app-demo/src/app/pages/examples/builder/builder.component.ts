@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { coerceNumberProperty } from '@angular/cdk/coercion';
+import { MdePopoverPositionX, MdePopoverPositionY, MdePopoverTriggerEvent } from 'dist/lib-popover/popover-types';
 
 @Component({
   selector: 'app-builder',
@@ -12,10 +13,10 @@ export class PageExamplesBuilderComponent {
 
   popover;
 
-  popoverPositionX = 'before';
-  popoverPositionY = 'above';
+  popoverPositionX: MdePopoverPositionX = 'before';
+  popoverPositionY: MdePopoverPositionY = 'above';
 
-  event = 'click';
+  event: MdePopoverTriggerEvent = 'click';
 
   autoTicks = false;
   disabled = false;
