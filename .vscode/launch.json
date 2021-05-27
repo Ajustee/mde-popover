@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "copy",
+			"skipFiles": [ "<node_internals>/**" ],
+			"cwd": "${workspaceFolder}",
+			"program": "scripts/copy.ts",
+			"runtimeArgs": [ "-r", "ts-node/register" ],
+			"env": {
+				"TS_NODE_PROJECT": "${workspaceFolder}/scripts/tsconfig.json"
+			},
+			"console": "integratedTerminal",
+			"windows": {
+				"runtimeExecutable": "D:/Progs/nodejs/node.exe",
+			}
+		}
+	]
+}

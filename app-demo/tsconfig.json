@@ -4,7 +4,7 @@
     "types": [],
     "paths": {
       "@ajustee/mde-popover": [
-        "dist/lib-popover"
+        "out/lib-popover"
       ]
     }
   },

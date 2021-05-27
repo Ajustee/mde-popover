@@ -22,7 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../dist/app-demo",
+            "outputPath": "../out/app-demo",
             "index": "app-demo/src/index.html",
             "main": "app-demo/src/main.ts",
             "polyfills": "app-demo/src/polyfills.ts",

@@ -29,9 +29,7 @@
     "serve": "ng serve",
     "build:lib": "ng build lib-popover",
     "build:lib:prod": "ng build lib-popover --configuration production",
-    "release": "standard-version",
-    "release:alpha": "standard-version --prerelease alpha",
-    "release:beta": "standard-version --prerelease beta"
+	"copy": "ts-node --project scripts/tsconfig.json scripts/copy.ts"
   },
   "dependencies": {
     "@angular/animations": "^12.0.2",
@@ -50,6 +48,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+	"@angular-devkit/core": "12.0.2",
     "@angular-devkit/build-angular": "~12.0.2",
     "@angular/cli": "~12.0.2",
     "@angular/compiler-cli": "^12.0.2",

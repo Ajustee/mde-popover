@@ -1,0 +1,23 @@
+{
+	"compilerOptions":
+	{
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"target": "es2019",
+		"lib": ["es2020"],
+		"outDir": "dist",
+
+		"strict": true,
+		"noImplicitReturns": true,
+		"noImplicitAny": true,
+		"noUncheckedIndexedAccess": true,
+		"noFallthroughCasesInSwitch": true,
+	},
+	"ts-node":
+	{
+		"compilerOptions":
+		{
+		  "module": "commonjs"
+		}
+	},
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { coerceNumberProperty } from '@angular/cdk/coercion';
-import { MdePopoverPositionX, MdePopoverPositionY, MdePopoverTriggerEvent } from 'dist/lib-popover/popover-types';
+import { MdePopoverPositionX, MdePopoverPositionY, MdePopoverTriggerEvent } from '@ajustee/mde-popover';
 
 @Component({
   selector: 'app-builder',
