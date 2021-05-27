@@ -22,7 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../out/app-demo",
+            "outputPath": "out/app-demo",
             "index": "app-demo/src/index.html",
             "main": "app-demo/src/main.ts",
             "polyfills": "app-demo/src/polyfills.ts",
@@ -57,7 +57,16 @@
                   "with": "app-demo/src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization":
+			  {
+				"scripts": true,
+				"fonts": false,
+				"styles":
+				{
+				  "minify": true,
+				  "inlineCritical": false
+				}
+			  },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,

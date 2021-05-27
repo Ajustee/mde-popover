@@ -1,11 +1,21 @@
 {
   "name": "@ajustee/mde-popover",
   "version": "4.0.0",
-  "description": "fork of @ajustee/mde-popover",
+  "description": "A fork of @material-extended/mde",
   "license": "MIT",
   "author": {
     "name": "Joe Jordan Brown",
     "email": "joe.jordan.brown@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Agakhan",
+      "email": "files.sasha@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ajustee/mde-popover.git"
   },
   "keywords": [
     "angular popover",
@@ -15,9 +25,9 @@
     "popover"
   ],
   "peerDependencies": {
-    "@angular/animations": "^12.0.2",
-    "@angular/cdk": "^12.0.2",
-    "@angular/common": "^12.0.2",
-    "@angular/core": "^12.0.2"
+    "@angular/animations": ">=12.0.0",
+    "@angular/cdk": ">=12.0.0",
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0"
   }
 }

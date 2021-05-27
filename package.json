@@ -1,19 +1,22 @@
 {
   "private": true,
   "name": "@ajustee/mde-popover-app-demo",
-  "description": "fork of @material-extended/mde",
   "version": "4.0.0",
+  "description": "A fork of @material-extended/mde",
+  "license": "MIT",
   "author": {
     "name": "Joe Jordan Brown",
     "email": "joe.jordan.brown@gmail.com"
   },
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Alexander Agakhan",
+      "email": "files.sasha@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/material-extended/mde"
-  },
-  "bugs": {
-    "url": "https://github.com/material-extended/mde/issues"
+    "url": "https://github.com/Ajustee/mde-popover.git"
   },
   "keywords": [
     "angular popover",
@@ -34,7 +37,8 @@
   },
   "scripts": {
     "serve": "ng serve",
-	"build": "ng build",
+	"build:demo": "ng build",
+	"build:demo:prod": "ng build --configuration production",
     "build:lib": "ng build lib-popover",
     "build:lib:prod": "ng build lib-popover --configuration production",
 	"copy": "ts-node --project scripts/tsconfig.json scripts/copy.ts"

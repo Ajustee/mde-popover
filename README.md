@@ -1,8 +1,6 @@
 # Angular Popover
 
-[Forked from](https://github.com/joejordanbrown/popover) and updated for Angular 12.
-
-[![npm version](https://badge.fury.io/js/%40material-extended%2Fmde.svg)](https://www.npmjs.com/package/%40ajustee%2Fmde-popover)
+A fork of [https://github.com/joejordanbrown/popover](https://github.com/joejordanbrown/popover) and updated for Angular 12.
 
 #### Links
 [Original @material-extended/mde Popover Demo](https://uixd.co.uk/open-source-software/material-extended/demo) | [StackBlitz Template](https://stackblitz.com/edit/mde-popover)
