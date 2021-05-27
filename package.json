@@ -22,11 +22,19 @@
     "material popover",
     "popover"
   ],
+  "browserslist":
+  [
+    "last 2 Chrome version",
+    "last 2 Firefox version",
+    "last 2 Safari major versions",
+	"last 2 iOS major versions"
+  ],
   "engines": {
     "node": ">= 10.0.0"
   },
   "scripts": {
     "serve": "ng serve",
+	"build": "ng build",
     "build:lib": "ng build lib-popover",
     "build:lib:prod": "ng build lib-popover --configuration production",
 	"copy": "ts-node --project scripts/tsconfig.json scripts/copy.ts"
