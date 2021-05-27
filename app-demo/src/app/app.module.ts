@@ -20,7 +20,6 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { ThemePickerComponent } from './shared/components/theme-picker/theme-picker.component';
 import { NotificationsComponent } from './shared/components/notifications/notifications.component';
-import { GithubComponent } from './shared/components/github/github.component';
 import { SupportComponent } from './shared/components/support/support.component';
 import { ErrorModule } from './pages/error/error.module';
 
@@ -30,7 +29,6 @@ import { ErrorModule } from './pages/error/error.module';
     AppComponent,
     ThemePickerComponent,
     NotificationsComponent,
-    GithubComponent,
     SupportComponent,
   ],
   imports: [
